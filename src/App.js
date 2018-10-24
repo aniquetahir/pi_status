@@ -6,7 +6,7 @@ class EmailStatistics extends Component {
   render(){
     return (
         <div className="uk-grid uk-grid-collapse uk-child-width-1-1">
-          <div><span uk-icon="mail"></span>10 unread</div>
+          <span className="uk-label-warning uk-text-bold"><div><span uk-icon="mail"></span>10</div></span>
         </div>
     );
   }
@@ -16,11 +16,11 @@ class UpcomingEventsMenu extends Component {
   render(){
     return (
         <table className="uk-table uk-table-striped" style={{marginTop: 0}}>
-            <caption><span className="uk-label uk-label-warning">Upcoming Calendar Events</span></caption>
+            <caption><span className="uk-label uk-label-warning uk-text-bold">Upcoming Calendar Events</span></caption>
             <thead>
             <tr>
-                <th className="uk-table-shrink uk-text-nowrap">Date/Time</th>
-                <th className="uk-table-expand">Title</th>
+                <th className="uk-table-shrink uk-text-nowrap"><b>Date/Time</b></th>
+                <th className="uk-table-expand"><b>Title</b></th>
             </tr>
             </thead>
             <tbody>
